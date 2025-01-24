@@ -1,6 +1,59 @@
-.section1 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url('./assets/4884273.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+* {
+  font-family: "sans-serif";
 }
 
+.section1 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("src/assets/banner_iot.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mainbodyheader {
+  text-shadow: 1px 1px 8px #003b71;
+}
+
+.h1-animate {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.4); /* No rotation here */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* No rotation here */
+  }
+}
+
+.loadersec {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("src/assets/4884273.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.loaderimg {
+  animation: loader 4s linear infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

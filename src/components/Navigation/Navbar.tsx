@@ -1,10 +1,11 @@
-import React from "react";
-import Button from "../../components/button/Button";
+import Button from "../UI/button/Button";
 
 function Navbar() {
+  const iconstyle: string =
+    "flex items-center p-1 text-black bg-white rounded-xl cursor-pointer hover:bg-text-primary hover:text-white";
   return (
     <>
-      <header className="w-screen h-[38px] flex items-center bg-bg-nav text-white">
+      <header className="w-auto h-[38px] flex items-center bg-bg-nav text-white">
         <div className="flex justify-around w-3/4">
           <div className="flex gap-1">
             <img src="src\assets\location_icon.svg" alt="Location_icon" />
@@ -23,16 +24,16 @@ function Navbar() {
         </div>
 
         <div className="flex gap-5 absolute right-10">
-          <div className="facebook flex items-center p-1 text-black bg-white rounded-xl">
+          <div className={`facebook ${iconstyle}`}>
             <img src="src\assets\facebook.svg" alt="facebook" />
           </div>
-          <div className="insta flex items-center p-1 text-black bg-white rounded-xl">
+          <div className={`insta ${iconstyle}`}>
             <img src="src\assets\instagram.svg" alt="instagram" />
           </div>
-          <div className="twitter flex items-center p-1 text-black bg-white rounded-xl">
+          <div className={`twitter ${iconstyle}`}>
             <img src="src\assets\x-twitter.svg" alt="instagram" />
           </div>
-          <div className="youtube flex items-center p-1 text-black bg-white rounded-xl">
+          <div className={`youtube ${iconstyle}`}>
             <img src="src\assets\youtube.svg" alt="instagram" />
           </div>
         </div>
