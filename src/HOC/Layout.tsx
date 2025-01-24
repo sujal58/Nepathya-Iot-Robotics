@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import Loader from "../components/PageComponent/loader/Loader";
+import Loader from "../components/UI/loader/Loader.tsx";
 import Navbar from "../components/Navigation/Navbar";
-import Body from "../components/PageComponent/body/Body";
+import Body from "../components/PageComponent/Main";
+import Work from "../components/PageComponent/Work.tsx";
 
 function Layout() {
   const [loader, setLoader] = useState(true);
@@ -24,6 +25,7 @@ function Layout() {
         <>
           <Navbar />
           <Body />
+          {/* <Work /> */}
         </>
       )}
     </>
