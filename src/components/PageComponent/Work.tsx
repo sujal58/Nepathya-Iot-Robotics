@@ -1,16 +1,20 @@
 import WorkCard from "../UI/workCard/WorkCard";
+import work from "../../data/work.json";
 
 function Work() {
   return (
-    <div className="flex flex-col mt-10 mx-10 h-screen justify-around">
+    <div className="flex flex-col mt-5 mx-10 h-screen justify-around">
       <div className="title text-text-primary font-bold text-4xl text-center">
         OUR WORK
       </div>
-      <div className="flex justify-around overflow-scroll-x gap-10">
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
+      <div className="flex justify-around overflow-scroll-x gap-6">
+        {work.map((value, index) => {
+          return (
+            <div key={index}>
+              <WorkCard image={value.image} description={value.description} />
+            </div>
+          );
+        })}
       </div>
       <div className="explorebtn flex justify-end">
         <button className="bg-bg-nav text-white p-2 rounded-xl">

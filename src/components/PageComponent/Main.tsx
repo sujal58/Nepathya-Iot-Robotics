@@ -1,5 +1,4 @@
 import Button from "../UI/button/Button";
-import Work from "./Work";
 
 function Body() {
   return (
@@ -44,7 +43,6 @@ function Body() {
           </div>
         </div>
       </div>
-      <Work />
     </div>
   );
 }

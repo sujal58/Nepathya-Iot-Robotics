@@ -1,0 +1,30 @@
+[
+  
+  {
+    "date": "2025-01-26",
+    "eventName": "IoT and Robotics Workshop",
+    "status": "Completed",
+    "buttons": {
+      "detailUrl": "#",
+      "registerUrl": "#"
+    }
+  },
+  {
+    "date": "",
+    "eventName": "Robo Sumo",
+    "status": "Upcoming",
+    "buttons": {
+      "detailUrl": "#",
+      "registerUrl": "#"
+    }
+  },
+  {
+    "date": "",
+    "eventName": "Drone Making Workshop",
+    "status": "Upcoming",
+    "buttons": {
+      "detailUrl": "#",
+      "registerUrl": "#"
+    }
+  }
+]

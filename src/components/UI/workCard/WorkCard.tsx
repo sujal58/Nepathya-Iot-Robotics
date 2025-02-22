@@ -1,18 +1,16 @@
-import cardimg from "../../../assets/4884273.jpg";
-
-function WorkCard() {
+type props = {
+  image: string;
+  description: string;
+};
+function WorkCard({ image, description }: props) {
   return (
-    <div className="w-1/4 bg-text-primary rounded-xl">
-      <div className="innercontent p-3">
+    <div className="w-[17rem] h-full bg-text-primary rounded-xl">
+      <div className="innercontent p-2">
         <div className="cardimg w-full">
-          <img src={cardimg} alt="" className="rounded-xl" />
+          <img src={image} alt="" className="rounded-xl" />
         </div>
-        <div className="card-des text-white">
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            praesentium quas sit incidunt, itaque totam possimus fugiat
-            voluptates iusto vitae beatae! Quibusdam blanditiis iure asperiores
-          </span>
+        <div className="card-des text-white text-justify">
+          <span>{description}</span>
         </div>
       </div>
     </div>
