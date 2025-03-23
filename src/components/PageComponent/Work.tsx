@@ -3,7 +3,7 @@ import work from "../../data/work.json";
 
 function Work() {
   return (
-    <div className="flex flex-col mt-5 mx-10 h-screen justify-around">
+    <div className="flex flex-col mt-5 gap-8 mx-10 z-30 min-h-[82vh] justify-around bg-white">
       <div className="title text-text-primary font-bold text-4xl text-center">
         OUR WORK
       </div>

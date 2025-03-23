@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
+
 type buttonprops = {
   text: string;
   icon?: string;
   alternate?: string;
   style?: string;
+  path: string;
 };
 
-function Button({ text, icon, alternate, style }: buttonprops) {
+function Button({ text, icon, alternate, style, path }: buttonprops) {
   return (
-    <a
+    <Link
+      to={path}
       className={`bg-bg-button text-white text-center cursor-pointer hover:bg-text-primary ${style}`}
     >
       {icon ? (
@@ -20,7 +24,7 @@ function Button({ text, icon, alternate, style }: buttonprops) {
       ) : (
         <button>{text}</button>
       )}
-    </a>
+    </Link>
   );
 }
 

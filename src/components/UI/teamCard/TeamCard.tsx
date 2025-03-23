@@ -23,11 +23,11 @@ function TeamCard({
 }: teamProps) {
   return (
     <div
-      className={`flex flex-col relative w-3/4 mb-5 h-full ${
+      className={`relative flex flex-col relative w-3/4 mb-5 min-h-[320px] ${
         designation == "President" && "border-text-tertiary"
       } border-text-primary  border-[1.5px] rounded-[60px] cursor-pointer transition-all duration-1000 hover:-translate-y-7 hover:scale-x-105  hover:shadow-xl hover:shadow-text-primary hover:border-2`}
     >
-      <div className="w-full flex flex-col justify-around gap-5 p-2">
+      <div className=" w-full flex flex-col justify-around gap-5 p-2">
         <div className="w-full flex justify-center items-center">
           <img
             src={image}
@@ -49,7 +49,7 @@ function TeamCard({
           <span>{info}</span>
         </div>
 
-        <div className="flex justify-evenly items-end">
+        <div className="flex absolute right-0 left-0 bottom-4 justify-evenly items-end">
           <a href={facebook}>
             <FaFacebook />
           </a>

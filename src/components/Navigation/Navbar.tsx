@@ -1,11 +1,36 @@
 import Button from "../UI/button/Button";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const iconstyle: string =
     "flex items-center p-1 text-black bg-white rounded-xl cursor-pointer hover:bg-text-primary hover:text-white";
+
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Team",
+      link: "/team",
+    },
+    {
+      name: "Upcoming Events",
+      link: "/upcoming-event",
+    },
+    {
+      name: "Our Work",
+      link: "/works",
+    },
+    {
+      name: "Get in Touch",
+      link: "/get-in-touch",
+    },
+  ];
+
   return (
-    <>
-      <header className="w-auto h-[38px] flex items-center bg-bg-nav text-white">
+    <div className="relative z-30">
+      <header className="w-auto h-[6vh] flex items-center bg-bg-nav text-white">
         <div className="flex justify-around w-3/4">
           <div className="flex gap-1">
             <img src="src\assets\location_icon.svg" alt="Location_icon" />
@@ -14,12 +39,12 @@ function Navbar() {
           <span> | </span>
           <div className="flex gap-1">
             <img src="src/assets/call_icon.svg" alt="tel_icon" />
-            <span>071562537, 9857034838, 9846970252</span>
+            <span>071562537, 9857043464</span>
           </div>
           <span> | </span>
           <div className="flex gap-2">
             <img src="src/assets/mail_icon.svg" alt="mail icon" />
-            <span>info@nepathyacollege.edu.np</span>
+            <span>info.iotrobotic@nepathyacollege.edu.np</span>
           </div>
         </div>
 
@@ -39,38 +64,35 @@ function Navbar() {
         </div>
       </header>
 
-      <header className="flex justify-around items-center w-auto h-[90px] border-2 border-border-button">
+      <header className="flex justify-around items-center w-auto h-[12vh] border-b-2 border-border-button bg-white">
         <img
-          src="src\assets\NepathyaCollege_Web_png.png"
+          src="src\assets\union_png.png"
           alt="nepathya_college-png"
-          className="h-16"
+          className="h-4/5 w-auto"
         />
-        <nav className="navlist flex gap-5 font-semibold">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Course</a>
-          <a href="#">Student Life</a>
-          <a href="#">Career</a>
-          <a href="#">Contact</a>
-          <a href="#">Career</a>
-          <a href="#">ProjectHub</a>
+
+        <nav className="navlist flex gap-12 font-semibold text-lg">
+          {navItems.map((value, index) => {
+            return (
+              <Link
+                to={value.link}
+                key={value + "_" + index}
+                className="hover:text-text-secondary"
+              >
+                {value.name}
+              </Link>
+            );
+          })}
         </nav>
-        {/* <a className='bg-bg-button text-white p-3 rounded-3xl'> */}
         <Button
-          text="Get Admission"
+          text="Join the Club"
           alternate="Graduation_cap"
           icon="src\assets\school_icon.svg"
           style="p-3 rounded-3xl"
+          path="/join"
         />
-        {/* <button className='flex gap-2'>
-            <div>
-              <img src="src\assets\school_icon.svg" alt="" />
-            </div>
-            <span>Get Admission</span>
-          </button> */}
-        {/* </a> */}
       </header>
-    </>
+    </div>
   );
 }
 

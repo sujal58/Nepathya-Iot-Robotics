@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import Loader from "../components/UI/loader/Loader.tsx";
 import Navbar from "../components/Navigation/Navbar";
-import Body from "../components/PageComponent/Main";
-import Work from "../components/PageComponent/Work.tsx";
-import Team from "../components/PageComponent/Team.tsx";
-import Upcoming from "../components/PageComponent/Upcoming.tsx";
-import GetInTouch from "../components/PageComponent/GetInTouch.tsx";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   const [loader, setLoader] = useState(true);
@@ -18,7 +14,7 @@ function Layout() {
     return () => {
       clearTimeout(timeout);
     };
-  }, []);
+  }, [window.onload]);
 
   return (
     <>
@@ -27,11 +23,7 @@ function Layout() {
       ) : (
         <>
           <Navbar />
-          <Body />
-          <Work />
-          <Team />
-          <Upcoming />
-          <GetInTouch />
+          <Outlet />
         </>
       )}
     </>

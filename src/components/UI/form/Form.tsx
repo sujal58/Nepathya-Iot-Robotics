@@ -1,6 +1,7 @@
 import vector1 from "../../../assets/background.svg";
 import vector2 from "../../../assets/background1.png";
 import { useForm, SubmitHandler } from "react-hook-form";
+import ParticleBackground from "../particle/ParticleBackground";
 
 function Form() {
   const {
@@ -21,13 +22,14 @@ function Form() {
   };
   return (
     <div className="flex relative justify-center items-center w-full min-h-screen bg-gradient-to-r from-teal-500 to-text-secondary bg-gray-100 ">
-      <img src={vector1} alt="" className="absolute bottom-0 z-10 w-full" />
+      <ParticleBackground />
+      <img src={vector1} alt="" className="absolute bottom-0 w-full z-20" />
       <img
         src={vector2}
         alt=""
         className="absolute right-0 bottom-0 h-96 w-full z-20"
       />
-      <div className="bg-white shadow-lg rounded-xl z-40 w-full max-w-md py-10 px-8">
+      <div className="bg-white shadow-lg rounded-xl w-full max-w-md py-10 px-8 z-30">
         <h1 className="text-2xl font-semibold text-center mb-6 text-text-secondary">
           Registration Form
         </h1>

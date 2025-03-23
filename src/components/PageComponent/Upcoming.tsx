@@ -3,7 +3,7 @@ import EventStatus from "../../utils/EventStatus";
 
 function Upcoming() {
   return (
-    <div className="h-auto mb-10">
+    <div className="min-h-[82vh] z-30 bg-white">
       <div className=" flex flex-col text-text-primary">
         <div className="heading h-1/4 bg-text-secondary text-white">
           <h2 className="text-white text-center text-3xl leading-10">

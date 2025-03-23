@@ -23,7 +23,7 @@ function Team() {
   };
   return (
     <div
-      className="flex flex-col h-screen justify-evenly relative"
+      className="flex z-30 flex-col min-h-[82vh] justify-evenly relative"
       style={{
         backgroundImage: "url(src/assets/team-bg.png)",
         backgroundPosition: "center",
@@ -44,7 +44,7 @@ function Team() {
         ssr={true}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="all 2"
         transitionDuration={2000}
@@ -52,7 +52,7 @@ function Team() {
         removeArrowOnDeviceType={[]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-20-px"
-        className="flex p-10 pb-16 z-50"
+        className="flex p-10 pb-10 z-50"
       >
         {teamData.map((value, index) => {
           return (
