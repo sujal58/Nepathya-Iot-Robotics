@@ -1,7 +1,25 @@
+import { useEffect, useState } from "react";
 import Button from "../UI/button/Button";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 function Navbar() {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setActive(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const iconstyle: string =
     "flex items-center p-1 text-black bg-white rounded-xl cursor-pointer hover:bg-text-primary hover:text-white";
 
@@ -29,26 +47,38 @@ function Navbar() {
   ];
 
   return (
-    <div className="relative z-30">
-      <header className="w-auto h-[6vh] flex items-center bg-bg-nav text-white">
-        <div className="flex justify-around w-3/4">
-          <div className="flex gap-1">
-            <img src="src\assets\location_icon.svg" alt="Location_icon" />
+    <div className="relative z-30 ">
+      <header className="w-auto hidden md:flex h-[6vh]  items-center bg-bg-nav text-white">
+        <div className="flex justify-around w-4/5 lg:w-3/4 md:text-xs lg:text-lg">
+          <div className="flex items-center gap-1">
+            <img
+              src="src\assets\location_icon.svg"
+              className="md:h-4 lg:h-5"
+              alt="Location_icon"
+            />
             <span>Manigram, Tilottama-5, Rupandehi, Nepal</span>
           </div>
           <span> | </span>
-          <div className="flex gap-1">
-            <img src="src/assets/call_icon.svg" alt="tel_icon" />
+          <div className="flex items-center gap-1">
+            <img
+              src="src/assets/call_icon.svg"
+              className="md:h-4 lg:h-5"
+              alt="tel_icon"
+            />
             <span>071562537, 9857043464</span>
           </div>
           <span> | </span>
-          <div className="flex gap-2">
-            <img src="src/assets/mail_icon.svg" alt="mail icon" />
+          <div className="flex items-center gap-2">
+            <img
+              src="src/assets/mail_icon.svg"
+              className="md:h-4 lg:h-5"
+              alt="mail icon"
+            />
             <span>info.iotrobotic@nepathyacollege.edu.np</span>
           </div>
         </div>
 
-        <div className="flex gap-5 absolute right-10">
+        <div className="flex gap-3 lg:gap-5 absolute right-5 lg:right-10">
           <div className={`facebook ${iconstyle}`}>
             <img src="src\assets\facebook.svg" alt="facebook" />
           </div>
@@ -64,31 +94,60 @@ function Navbar() {
         </div>
       </header>
 
-      <header className="flex justify-around items-center w-auto h-[12vh] border-b-2 border-border-button bg-white">
+      <header className="relative flex justify-between px-6 md:px-2 md:justify-around items-center w-auto h-[12vh] border-b-2 border-border-button bg-white">
         <img
           src="src\assets\union_png.png"
           alt="nepathya_college-png"
           className="h-4/5 w-auto"
         />
 
-        <nav className="navlist flex gap-12 font-semibold text-lg">
+        <nav
+          className={`navlist ${
+            active
+              ? "flex flex-col z-40 items-center justify-end absolute left-0 right-0 top-[12vh] bg-white py-5  h-auto"
+              : "hidden"
+          } md:flex md:flex-row gap-6 lg:gap-12 md:font-medium lg:font-semibold md:text-md lg:text-lg`}
+        >
           {navItems.map((value, index) => {
             return (
-              <Link
+              <NavLink
                 to={value.link}
                 key={value + "_" + index}
-                className="hover:text-text-secondary"
+                onClick={() => setActive(!active)}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white border md:text-text-tertiary md:bg-white border-text-tertiary md:border-none bg-text-primary w-3/4 md:w-auto rounded-xl text-center md:py-0 py-1"
+                    : "text-gray-800 hover:text-text-secondary"
+                }
               >
                 {value.name}
-              </Link>
+              </NavLink>
             );
           })}
+          <Button
+            text="Join the Club"
+            alternate="Graduation_cap"
+            icon="src\assets\school_icon.svg"
+            style="block md:hidden p-3 w-1/2 md:p-2 lg:p-3 rounded-3xl"
+            path="/join"
+          />
         </nav>
+
+        <div
+          className="block md:hidden cursor-pointer"
+          onClick={() => setActive(!active)}
+        >
+          {active ? (
+            <RxCross2 className="text-4xl" />
+          ) : (
+            <RxHamburgerMenu className="text-3xl" />
+          )}
+        </div>
         <Button
           text="Join the Club"
           alternate="Graduation_cap"
           icon="src\assets\school_icon.svg"
-          style="p-3 rounded-3xl"
+          style="hidden md:block px-1 py-2 md:p-2 lg:p-3 rounded-3xl"
           path="/join"
         />
       </header>

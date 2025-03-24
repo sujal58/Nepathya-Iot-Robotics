@@ -23,7 +23,7 @@ function Team() {
   };
   return (
     <div
-      className="flex z-30 flex-col min-h-[82vh] justify-evenly relative"
+      className="flex flex-col min-h-[82vh] justify-evenly relative z-20"
       style={{
         backgroundImage: "url(src/assets/team-bg.png)",
         backgroundPosition: "center",
@@ -31,7 +31,7 @@ function Team() {
         objectFit: "cover",
       }}
     >
-      <div className="bg-white opacity-50 h-full w-full absolute z-30"></div>
+      <div className="bg-white opacity-50 h-full w-full absolute z-10"></div>
       <div className="title text-text-primary font-bold text-4xl text-center z-50">
         Meet The Creative Team
       </div>

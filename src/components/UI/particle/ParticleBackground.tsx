@@ -6,7 +6,7 @@ import type { Container, Engine } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-const ParticleBackground = () => {
+const ParticleBackground = (props: { color: string }) => {
   const [init, setInit] = useState(false);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -60,15 +60,16 @@ const ParticleBackground = () => {
             },
             particles: {
               color: {
-                value: "#1111",
+                value: props.color == "black" ? "#00539F" : "#1111",
               },
               links: {
-                color: "#ffffff",
+                color: props.color == "black" ? "#00539F" : "#ffffff",
                 distance: 100,
                 enable: false,
                 opacity: 0.5,
                 width: 1,
               },
+              //
               move: {
                 direction: "none",
                 enable: true,
@@ -83,7 +84,7 @@ const ParticleBackground = () => {
                 density: {
                   enable: true,
                 },
-                value: 150,
+                value: 250,
               },
               opacity: {
                 value: 0.5,

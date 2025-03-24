@@ -1,10 +1,9 @@
-import "./App.css";
-import GetInTouch from "./components/PageComponent/GetInTouch";
-import Main from "./components/PageComponent/Main";
-import Team from "./components/PageComponent/Team";
-import Upcoming from "./components/PageComponent/Upcoming";
-import Work from "./components/PageComponent/Work";
-import Form from "./components/UI/form/Form";
+import GetInTouch from "./components/Pages/GetInTouch";
+import Main from "./components/Pages/Main";
+import Team from "./components/Pages/Team";
+import Upcoming from "./components/Pages/Upcoming";
+import Work from "./components/Pages/Work";
+import Form from "./components/UI/form/RegistrationForm";
 import Layout from "./HOC/Layout";
 import { Routes, Route } from "react-router-dom";
 

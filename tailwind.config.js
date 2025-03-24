@@ -16,6 +16,11 @@ export default {
 
         "border-button": "rgb(143, 184, 230)",
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
