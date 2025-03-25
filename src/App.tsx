@@ -3,7 +3,7 @@ import Main from "./components/Pages/Main";
 import Team from "./components/Pages/Team";
 import Upcoming from "./components/Pages/Upcoming";
 import Work from "./components/Pages/Work";
-import Form from "./components/UI/form/RegistrationForm";
+import Form from "./components/ui/form/RegistrationForm";
 import Layout from "./HOC/Layout";
 import { Routes, Route } from "react-router-dom";
 

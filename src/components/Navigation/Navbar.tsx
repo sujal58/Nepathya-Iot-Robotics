@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Button from "../UI/button/Button";
+import Button from "../ui/button/Button";
 import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
@@ -20,6 +20,12 @@ function Navbar() {
     };
   }, []);
 
+  const handleNavlinkClick = () => {
+    if (window.innerWidth <= 768) {
+      setActive(!active);
+    }
+  };
+  // setActive(!active);
   const iconstyle: string =
     "flex items-center p-1 text-black bg-white rounded-xl cursor-pointer hover:bg-text-primary hover:text-white";
 
@@ -49,7 +55,7 @@ function Navbar() {
   return (
     <div className="relative z-30 ">
       <header className="w-auto hidden md:flex h-[6vh]  items-center bg-bg-nav text-white">
-        <div className="flex justify-around w-4/5 lg:w-3/4 md:text-xs lg:text-lg">
+        <div className="flex justify-around w-4/5 lg:w-3/4 text-xs lg:text-md xl:text-lg">
           <div className="flex items-center gap-1">
             <img
               src="src\assets\location_icon.svg"
@@ -106,14 +112,14 @@ function Navbar() {
             active
               ? "flex flex-col z-40 items-center justify-end absolute left-0 right-0 top-[12vh] bg-white py-5  h-auto"
               : "hidden"
-          } md:flex md:flex-row gap-6 lg:gap-12 md:font-medium lg:font-semibold md:text-md lg:text-lg`}
+          } md:flex md:flex-row gap-6 lg:gap-12 md:font-medium lg:font-medium xl:font-bold md:text-md lg:text-lg`}
         >
           {navItems.map((value, index) => {
             return (
               <NavLink
                 to={value.link}
                 key={value + "_" + index}
-                onClick={() => setActive(!active)}
+                onClick={handleNavlinkClick}
                 className={({ isActive }) =>
                   isActive
                     ? "text-white border md:text-text-tertiary md:bg-white border-text-tertiary md:border-none bg-text-primary w-3/4 md:w-auto rounded-xl text-center md:py-0 py-1"
@@ -128,7 +134,7 @@ function Navbar() {
             text="Join the Club"
             alternate="Graduation_cap"
             icon="src\assets\school_icon.svg"
-            style="block md:hidden p-3 w-1/2 md:p-2 lg:p-3 rounded-3xl"
+            style="block md:hidden p-3 sm:w-1/2 md:p-2 lg:p-3 rounded-3xl"
             path="/join"
           />
         </nav>

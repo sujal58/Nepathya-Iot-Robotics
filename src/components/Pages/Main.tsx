@@ -1,4 +1,4 @@
-import Button from "../UI/button/Button";
+import Button from "../ui/button/Button";
 
 function Body() {
   return (
@@ -16,7 +16,7 @@ function Body() {
           </div>
           <Button
             text="Join the Club"
-            style="p-3 rounded-3xl text-2xl w-2/3 lg:w-2/6 lg:w-1/3"
+            style="p-3 rounded-3xl text-2xl w-2/4 md:w-2/4 lg:w-1/4"
             path="/join"
           />
         </div>

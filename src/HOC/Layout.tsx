@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Loader from "../components/UI/loader/Loader.tsx";
+import Loader from "../components/ui/loader/Loader.tsx";
 import Navbar from "../components/Navigation/Navbar";
 import { Outlet } from "react-router-dom";
 

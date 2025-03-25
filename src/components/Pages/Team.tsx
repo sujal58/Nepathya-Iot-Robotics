@@ -1,5 +1,5 @@
 import teamData from "../../data/team.json";
-import TeamCard from "../UI/teamCard/TeamCard";
+import TeamCard from "../ui/teamCard/TeamCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -13,6 +13,11 @@ function Team() {
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 3,
+      slidesToSlide: 1,
+    },
+    medium: {
+      breakpoint: { max: 700, min: 464 },
+      items: 2,
       slidesToSlide: 1,
     },
     mobile: {
@@ -32,13 +37,13 @@ function Team() {
       }}
     >
       <div className="bg-white opacity-50 h-full w-full absolute z-10"></div>
-      <div className="title text-text-primary font-bold text-4xl text-center z-50">
+      <div className="title text-text-primary font-bold text-2xl md:text-3xl lg:text-4xl text-center z-50 mt-10">
         Meet The Creative Team
       </div>
       <Carousel
         swipeable={true}
         draggable={true}
-        showDots={true}
+        showDots={false}
         arrows={false}
         responsive={responsive}
         ssr={true}
@@ -54,6 +59,7 @@ function Team() {
         itemClass="carousel-item-padding-20-px"
         className="flex p-10 pb-10 z-50"
       >
+        {/* p-10  */}
         {teamData.map((value, index) => {
           return (
             <div key={index}>

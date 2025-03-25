@@ -10,10 +10,10 @@ function Upcoming() {
             UPCOMING EVENTS
           </h2>
         </div>
-        <div className=" flex flex-col justify-around gap-5 mt-10 mx-10">
+        <div className=" flex flex-col justify-around gap-5 mt-10 md:mx-10">
           <div className="text-text-tertiary flex justify-between">
             <div className="w-1/5 text-center font-bold">Date</div>
-            <div className="w-1/5 text-center text-lg font-bold">
+            <div className="w-1/5 text-center md:text-lg font-bold">
               Event Name
             </div>
             <div className="text-right w-1/5 font-bold">Status</div>
@@ -27,20 +27,20 @@ function Upcoming() {
                 <div className="w-1/5 text-center">
                   {value.date == "" ? "Not Fixed yet" : value.date}
                 </div>
-                <div className="w-1/5 text-center text-lg font-medium">
+                <div className="w-1/5 text-center md:text-lg md:font-medium">
                   {value.eventName}
                 </div>
                 <div className="text-right w-1/5">
                   {EventStatus(value.date)}
                 </div>
-                <div className="eventBtn flex gap-5 w-2/5 justify-end">
+                <div className="eventBtn flex flex-col md:flex-row gap-1 md:gap-5 w-2/5 justify-end items-end">
                   <a href={value.buttons.detailUrl}>
-                    <button className="border-2 border-text-primary px-5 py-2">
+                    <button className="border-2 border-text-primary py-1 px-5 md:py-2">
                       Details
                     </button>
                   </a>
                   <a href={value.buttons.registerUrl}>
-                    <button className="border-2 border-text-primary px-5 py-2">
+                    <button className="border-2 border-text-primary px-2 py-1 md:px-5 md:py-2">
                       Register Now
                     </button>
                   </a>

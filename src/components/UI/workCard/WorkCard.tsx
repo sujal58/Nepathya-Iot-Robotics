@@ -4,7 +4,7 @@ type props = {
 };
 function WorkCard({ image, description }: props) {
   return (
-    <div className="w-[17rem] h-full bg-text-primary rounded-xl">
+    <div className="w-[17rem] h-[80vh] bg-text-primary rounded-xl">
       <div className="innercontent p-2">
         <div className="cardimg w-full">
           <img src={image} alt="" className="rounded-xl" />
