@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "../ui/button/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 function Navbar() {
@@ -43,7 +43,11 @@ function Navbar() {
       link: "/upcoming-event",
     },
     {
-      name: "Our Work",
+      name: "Achievement",
+      link: "/achievement",
+    },
+    {
+      name: "Work",
       link: "/works",
     },
     {
@@ -53,10 +57,10 @@ function Navbar() {
   ];
 
   return (
-    <div className="relative z-30 ">
+    <div className="relative z-50 ">
       <header className="w-auto hidden md:flex h-[6vh]  items-center bg-bg-nav text-white">
-        <div className="flex justify-around w-4/5 lg:w-3/4 text-xs lg:text-md xl:text-lg">
-          <div className="flex items-center gap-1">
+        <div className="flex justify-around w-4/5 lg:w-3/4 text-xs md:text-xs lg:text-sm xl:text-lg">
+          <div className="flex items-center md:gap-1">
             <img
               src="src\assets\location_icon.svg"
               className="md:h-4 lg:h-5"
@@ -100,19 +104,21 @@ function Navbar() {
         </div>
       </header>
 
-      <header className="relative flex justify-between px-6 md:px-2 md:justify-around items-center w-auto h-[12vh] border-b-2 border-border-button bg-white">
-        <img
-          src="src\assets\union_png.png"
-          alt="nepathya_college-png"
-          className="h-4/5 w-auto"
-        />
+      <header className="relative flex justify-between px-6 md:px-2 md:justify-around items-center w-auto h-[12vh] border-b-2 z-50 border-border-button bg-white">
+        <Link to={"/"} className="h-4/5 w-auto">
+          <img
+            src="src\assets\union_png.png"
+            alt="nepathya_college-png"
+            className="h-full w-auto"
+          />
+        </Link>
 
         <nav
           className={`navlist ${
             active
-              ? "flex flex-col z-40 items-center justify-end absolute left-0 right-0 top-[12vh] bg-white py-5  h-auto"
+              ? "flex flex-col z-50 items-center justify-end absolute left-0 right-0 top-[12vh] bg-white py-5  h-auto"
               : "hidden"
-          } md:flex md:flex-row gap-6 lg:gap-12 md:font-medium lg:font-medium xl:font-bold md:text-md lg:text-lg`}
+          } md:flex md:flex-row gap-6 lg:gap-12 md:font-medium lg:font-medium xl:font-bold md:text-md lg:text-lg z-50`}
         >
           {navItems.map((value, index) => {
             return (

@@ -23,7 +23,7 @@ function TeamCard({
 }: teamProps) {
   return (
     <div
-      className={`relative flex flex-col relative w-3/4 mb-5 min-h-[320px] ${
+      className={`relative flex flex-col w-3/4 mb-5 min-h-[320px] z-50 ${
         designation == "President" && "border-text-tertiary"
       } border-text-primary  border-[1.5px] rounded-[60px] cursor-pointer transition-all duration-1000 hover:-translate-y-7 hover:scale-x-105  hover:shadow-xl hover:shadow-text-primary hover:border-2`}
     >

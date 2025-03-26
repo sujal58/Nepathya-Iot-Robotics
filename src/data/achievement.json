@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "src/assets/achievement/ktm-first.jpg",
+        "title": "Team Alertix won first place at InnovateExpo 2024 🎉🏆",
+        "description": "Huge congratulations to the project demonstration team Alertix for winning first place at InnovateExpo 2024 in Kathmandu! 🎉🏆Presented by TechAspire College and organized by Khudkila Pvt. Ltd., this victory is a testament to your hard work, innovation, and dedication. We're incredibly proud of your achievement!"
+    },
+    {
+        "id": 2,
+        "image": "src/assets/achievement/ktm-fairplay.jpg",
+        "title": "Fair Play Award at InnovateExpo 2024! 🤖👏",
+        "description": "A big shout-out to the Robo Soccer team The Flames for securing the Fair Play Award at InnovateExpo 2024! 🤖👏Your sportsmanship and teamwork stood out, and this recognition reflects your commitment to excellence. Well done on this fantastic achievement!"
+    },
+    {
+        "id": 3,
+        "image": "src/assets/achievement/ktm-first.jpg",
+        "title": "Team Alertix won first place at InnovateExpo 2024 🎉🏆",
+        "description": "Huge congratulations to the project demonstration team Alertix for winning first place at InnovateExpo 2024 in Kathmandu! 🎉🏆Presented by TechAspire College and organized by Khudkila Pvt. Ltd., this victory is a testament to your hard work, innovation, and dedication. We're incredibly proud of your achievement!"
+    }
+]

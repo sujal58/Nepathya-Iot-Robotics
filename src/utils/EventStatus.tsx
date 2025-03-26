@@ -3,8 +3,6 @@ const currentDate = new Date();
 function EventStatus(date: string) {
   let status = "Upcoming";
   let programDate = new Date(date);
-  console.log(currentDate.toDateString());
-  console.log(programDate.toDateString());
 
   if (date == " ") {
     status = "Upcoming";

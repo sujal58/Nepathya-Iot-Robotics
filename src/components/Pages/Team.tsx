@@ -1,5 +1,5 @@
 import teamData from "../../data/team.json";
-import TeamCard from "../ui/teamCard/TeamCard";
+import TeamCard from "../ui/card/TeamCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -28,7 +28,7 @@ function Team() {
   };
   return (
     <div
-      className="flex flex-col min-h-[82vh] justify-evenly relative z-20"
+      className="flex flex-col gap-2 min-h-[82vh] relative z-20"
       style={{
         backgroundImage: "url(src/assets/team-bg.png)",
         backgroundPosition: "center",
@@ -37,7 +37,7 @@ function Team() {
       }}
     >
       <div className="bg-white opacity-50 h-full w-full absolute z-10"></div>
-      <div className="title text-text-primary font-bold text-2xl md:text-3xl lg:text-4xl text-center z-50 mt-10">
+      <div className="title text-text-primary font-bold text-2xl md:text-3xl mt-3 lg:text-4xl text-center z-30">
         Meet The Creative Team
       </div>
       <Carousel
@@ -57,7 +57,7 @@ function Team() {
         removeArrowOnDeviceType={[]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-20-px"
-        className="flex p-10 pb-10 z-50"
+        className="flex z-50 p-10"
       >
         {/* p-10  */}
         {teamData.map((value, index) => {

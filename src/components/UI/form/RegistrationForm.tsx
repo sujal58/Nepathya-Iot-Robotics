@@ -2,11 +2,26 @@ import vector1 from "../../../assets/background.svg";
 import vector2 from "../../../assets/background1.png";
 import { useForm, SubmitHandler } from "react-hook-form";
 import ParticleBackground from "../particle/ParticleBackground";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
+// import InitEmailJs from "@/utils/EmailJs";
 
 function RegistrationForm() {
+  const { toast } = useToast();
+
+  const emailJs_templateId = import.meta.env
+    .VITE_EMAILJS_REGISTRATION_TEMPLATE_ID;
+  const emailJs_serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const emailJS_publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_ID;
+
+  console.log("Service ID: ", emailJs_serviceId);
+  console.log("Template ID: ", emailJs_templateId);
+  console.log("Public Key: ", emailJS_publicKey);
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<formData>();
 
@@ -19,6 +34,39 @@ function RegistrationForm() {
 
   const onSubmit: SubmitHandler<formData> = (data) => {
     console.log(data);
+
+    // InitEmailJs();
+
+    const templateParams = {
+      name: data.name,
+      email: data.email,
+      message: `I am a student of semester ${data.semester} in Nepathya college. I am intrested to Register my name into this club as a member.`,
+    };
+
+    // Send the email using EmailJS
+    emailjs
+      .send(emailJs_serviceId, emailJs_templateId, templateParams, {
+        publicKey: emailJS_publicKey,
+      })
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response);
+          toast({
+            variant: "success",
+            title: `Dear ${data.name}`,
+            description: "Your message has been sent successfully!",
+          });
+          reset();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          toast({
+            variant: "destructive",
+            title: `Dear ${data.name}`,
+            description: "Oops! Something went wrong.",
+          });
+        }
+      );
   };
   return (
     <div className="flex relative justify-center items-center w-full min-h-screen bg-gradient-to-r from-teal-500 to-text-secondary bg-gray-100 ">

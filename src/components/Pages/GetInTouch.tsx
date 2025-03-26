@@ -20,10 +20,10 @@ function GetInTouch() {
         </p>
       </div>
       <div className="flex flex-col gap-5  md:gap-0 md:flex-row justify-around w-full items-center h-full">
-        <div className="relative text-xs md:text-lg w-5/6 md:w-1/2 flex z-10 h-full  items-center justify-center text-white">
-          <div className="contactdiv flex flex-col gap-12 lg:w-2/3 h-full rounded-md p-3 lg:px-8 py-10 z-30 bg-text-secondary ">
+        <div className="relative w-5/6 md:w-1/2 flex z-10 h-full  items-center justify-center text-white">
+          <div className="contactdiv flex flex-col gap-12 h-full w-full md:w-[90%] lg:w-3/4 rounded-md p-3 lg:px-8 py-10 z-30 bg-text-secondary ">
             {/* contact information */}
-            <div className="flex flex-col gap-10 ">
+            <div className="flex flex-col gap-10 text-sm sm:text-base md:text-lg">
               <h3 className=" text-xl md:text-2xl font-montserrat font-semibold">
                 Contact Information
               </h3>
@@ -32,7 +32,7 @@ function GetInTouch() {
                   href="https://www.google.com/maps?q=Manigram, Tilottama-5, Rupandehi, Nepal"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex md:gap-2"
+                  className="flex gap-1 md:gap-2"
                 >
                   <img src="src/assets/location_icon.svg" alt="Location_icon" />
                   <span>Manigram, Tilottama-5, Rupandehi, Nepal</span>
@@ -62,11 +62,12 @@ function GetInTouch() {
               </div>
             </div>
 
+            {/* Social Media Links */}
             <div className="flex flex-col space-y-5">
               <h3 className="text-xl md:text-2xl font-semibold text-white">
                 Social Media Links
               </h3>
-              {/* Social Media Links */}
+
               <div className="flex gap-10 md:gap-14 right-10">
                 <div className={`facebook ${iconstyle}`}>
                   <img src="src\assets\facebook.svg" alt="facebook" />

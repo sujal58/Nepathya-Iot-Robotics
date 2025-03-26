@@ -1,3 +1,4 @@
+import Achievement from "./components/Pages/Achievement";
 import GetInTouch from "./components/Pages/GetInTouch";
 import Main from "./components/Pages/Main";
 import Team from "./components/Pages/Team";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/works" element={<Work />} />
           <Route path="/get-in-touch" element={<GetInTouch />} />
           <Route path="/join" element={<Form />} />
+          <Route path="/achievement" element={<Achievement />} />
         </Route>
       </Routes>
     </>

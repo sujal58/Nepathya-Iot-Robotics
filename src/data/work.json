@@ -1,22 +1,22 @@
 [
     {
-        "id":1,
+        "id": 1,
         "image": "src/assets/works/roboRace.jpg",
-        "description":"Successfully conducted, the week-long IoT and Robotics training at Rammani Campus showcased innovative projects and cutting-edge technology, offering a valuable opportunity for +2 students to explore the future of tech. Special thanks to Mr. Naveen Srivastava, the Indian Ambassador to Nepal, for his presence and support!"
+        "description": "Successfully conducted, the week-long IoT and Robotics training at Rammani Campus showcased innovative projects and cutting-edge technology, offering a valuable opportunity for +2 students to explore the future of tech. Special thanks to Mr. Naveen Srivastava, the Indian Ambassador to Nepal, for his presence and support!"
     },
     {
-        "id":1,
+        "id": 2,
         "image": "src/assets/works/rammaniFirst.jpg",
-        "description":"Successfully conducted, the week-long IoT and Robotics training at Rammani Campus showcased innovative projects and cutting-edge technology, offering a valuable opportunity for +2 students to explore the future of tech. Special thanks to Mr. Naveen Srivastava, the Indian Ambassador to Nepal, for his presence and support!"
+        "description": "Successfully conducted, the week-long IoT and Robotics training at Rammani Campus showcased innovative projects and cutting-edge technology, offering a valuable opportunity for +2 students to explore the future of tech. Special thanks to Mr. Naveen Srivastava, the Indian Ambassador to Nepal, for his presence and support!"
     },
     {
-        "id":1,
-        "image": "src/assets/works/roboRace.jpg",
-        "description":"Nepathya Robo Race has concluded! A huge congratulations to Team Flames for winning the race! 🎉🔥 Kudos to Team Drogon and Team Jezz for securing the runner-up positions. Well done, everyone! 🌟🤖 "
+        "id": 3,
+        "image": "src/assets/works/pseb.jpg",
+        "description": "Nepathya IoT and Robotics Union has successfully wrapped up a week-long IoT and Robotics Workshop at Pharsatikar Siddhartha English Boarding School. On this special Student Day, students showcased their amazing projects, turning ideas into reality!their enthusiasm, creativity, and hard work were truly inspiring. Seeing proud guardians and esteemed guests celebrate their progress made the event even more special. This is just the beginning of their tech journey! We are proud to be part of their learning journey!"
     },
     {
-        "id":1,
-        "image": "src/assets/works/rammaniFirst.jpg",
-        "description":"Successfully conducted, the week-long IoT and Robotics training at Rammani Campus showcased innovative projects and cutting-edge technology, offering a valuable opportunity for +2 students to explore the future of tech. Special thanks to Mr. Naveen Srivastava, the Indian Ambassador to Nepal, for his presence and support!"
+        "id": 4,
+        "image": "src/assets/works/rammaniSecond.jpg",
+        "description": "successfully completed our 15-day IoT & Robotics workshop at Rammani Campus! It has been an incredible journey of learning and innovation, where students explored new technologies, developed their problem-solving skills, and created their own exciting projects. We are proud of the hard work and dedication shown by all participants. A big thank you to everyone who made this workshop a success! We look forward to seeing our students continue to grow and innovate in the world of technology. "
     }
 ]

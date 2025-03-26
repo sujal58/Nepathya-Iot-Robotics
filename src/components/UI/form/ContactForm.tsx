@@ -1,9 +1,18 @@
 import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
 
 function ContactForm() {
+  const emailJs_templateId = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID;
+  const emailJs_serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const emailJS_publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_ID;
+
+  const { toast } = useToast();
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<formData>();
 
@@ -16,6 +25,38 @@ function ContactForm() {
 
   const onSubmit: SubmitHandler<formData> = (data) => {
     console.log(data);
+    // Define templateParams (matching the fields in your email template)
+
+    const templateParams = {
+      name: data.name,
+      email: data.email,
+      message: data.messages,
+    };
+
+    // Send the email using EmailJS
+    emailjs
+      .send(emailJs_serviceId, emailJs_templateId, templateParams, {
+        publicKey: emailJS_publicKey,
+      })
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response);
+          toast({
+            variant: "success",
+            title: `Dear ${data.name}`,
+            description: "Your message has been sent successfully!",
+          });
+          reset();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          toast({
+            variant: "destructive",
+            title: `Dear ${data.name}`,
+            description: "Oops! Something went wrong.",
+          });
+        }
+      );
   };
   return (
     <div className="flex relative justify-center items-center w-full h-full bg-gradient-to-r ">
