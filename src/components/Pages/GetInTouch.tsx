@@ -1,5 +1,14 @@
 import ContactForm from "../ui/form/ContactForm";
 import ParticleBackground from "../ui/particle/ParticleBackground";
+import {
+  locationIcon,
+  callIcon,
+  mailIcon,
+  facebookIcon,
+  instagramIcon,
+  twitterIcon,
+  youtubeIcon,
+} from "@/assets/images";
 
 function GetInTouch() {
   const iconstyle: string =
@@ -34,7 +43,7 @@ function GetInTouch() {
                   rel="noopener noreferrer"
                   className="flex gap-1 md:gap-2"
                 >
-                  <img src="src/assets/location_icon.svg" alt="Location_icon" />
+                  <img src={locationIcon} alt="Location_icon" />
                   <span>Manigram, Tilottama-5, Rupandehi, Nepal</span>
                 </a>
               </div>
@@ -43,13 +52,13 @@ function GetInTouch() {
                   href="mailto:info.iotrobotic@nepathyacollege.edu.np"
                   className="flex gap-1 md:gap-2"
                 >
-                  <img src="src/assets/mail_icon.svg" alt="mail icon" />
+                  <img src={mailIcon} alt="mail icon" />
                   <span>info.iotrobotic@nepathyacollege.edu.np</span>
                 </a>
               </div>
 
               <div className="flex gap-1 md:gap-2">
-                <img src="src/assets/call_icon.svg" alt="tel_icon" />
+                <img src={callIcon} alt="tel_icon" />
                 <a href="tel:9857043464" className="text-white">
                   071562537
                 </a>
@@ -70,18 +79,18 @@ function GetInTouch() {
 
               <div className="flex gap-10 md:gap-14 right-10">
                 <div className={`facebook ${iconstyle}`}>
-                  <img src="src\assets\facebook.svg" alt="facebook" />
+                  <img src={facebookIcon} alt="facebook" />
                 </div>
                 {/* https://www.facebook.com/nepathyaroboticsclub */}
                 <div className={`insta ${iconstyle}`}>
-                  <img src="src\assets\instagram.svg" alt="instagram" />
+                  <img src={instagramIcon} alt="instagram" />
                 </div>
                 {/* https://www.instagram.com/nepathyaiotrobotics/ */}
                 <div className={`twitter ${iconstyle}`}>
-                  <img src="src\assets\x-twitter.svg" alt="instagram" />
+                  <img src={twitterIcon} alt="twitter" />
                 </div>
                 <div className={`youtube ${iconstyle}`}>
-                  <img src="src\assets\youtube.svg" alt="instagram" />
+                  <img src={youtubeIcon} alt="youtube" />
                 </div>
               </div>
             </div>

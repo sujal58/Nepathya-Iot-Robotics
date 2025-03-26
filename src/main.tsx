@@ -8,7 +8,7 @@ import { Toaster } from "./components/ui/toaster.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Router>
+    <Router basename="/Nepathya-Iot-Robotics/">
       <App />
       <Toaster />
     </Router>

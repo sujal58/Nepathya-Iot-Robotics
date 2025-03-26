@@ -26,7 +26,7 @@ function Work() {
     },
   };
   return (
-    <div className="flex flex-col mt-5 mb-5 mx-10 min-h-[82vh] bg-white">
+    <div className="flex flex-col mt-5 mb-5 gap-5 mx-10 min-h-[82vh] bg-white">
       <div className="title text-text-primary font-bold text-4xl text-center">
         OUR WORK
       </div>
@@ -34,7 +34,7 @@ function Work() {
       <Carousel
         swipeable={true}
         draggable={true}
-        showDots={false}
+        showDots={true}
         arrows={false}
         responsive={responsive}
         ssr={true}
@@ -48,7 +48,7 @@ function Work() {
         removeArrowOnDeviceType={[]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-20-px"
-        className="flex p-5 md:p-10 h-full relative"
+        className="flex p-5 pb-10 md:p-10 h-full relative"
       >
         {/* p-10  */}
         {work.map((value, index) => {

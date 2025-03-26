@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Sujal Pandey",
-    "image": "src/assets/member/sujalpandey.jpeg",
+    "image": "/Nepathya-Iot-Robotics/member/sujalpandey.jpeg",
     "designation": "President",
     "info": "Sujal is an experienced leader with a passion for innovation.",
     "socialLinks": {
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "name": "Aman Khadka",
-    "image": "src/assets/member/amankhadka.jpg",
+    "image": "/Nepathya-Iot-Robotics/member/amankhadka.jpg",
     "designation": "Vice President",
     "info": "Aman brings a wealth of knowledge in project management.",
     "socialLinks": {
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "name": "Binisha Regmi",
-    "image": "src/assets/member/binisharegmi.jpg",
+    "image": "/Nepathya-Iot-Robotics/member/binisharegmi.jpg",
     "designation": "Secretary",
     "info": "Binisha is a detail-oriented who focused on organizing team activities.",
     "socialLinks": {
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "name": "Bebas Pandey",
-    "image": "src/assets/member/bebaspandey.jpeg",
+    "image": "/Nepathya-Iot-Robotics/member/bebaspandey.jpeg",
     "designation": "Joint Secretary",
     "info": "Bebas is a strategic thinker with a knack for coordination.",
     "socialLinks": {
@@ -54,7 +54,7 @@
   {
     "id": 5,
     "name": "Nehasa Ale",
-    "image": "src/assets/member/nehasa.jpg",
+    "image": "/Nepathya-Iot-Robotics/member/nehasa.jpg",
     "designation": "Treasurer",
     "info": "Nehasa manages our finances with great attention to detail.",
     "socialLinks": {
@@ -67,7 +67,7 @@
   {
     "id": 6,
     "name": "Susmita Lamsal",
-    "image": "src/assets/member/susmitalamsal.jpeg",
+    "image": "/Nepathya-Iot-Robotics/member/susmitalamsal.jpeg",
     "designation": "Joint Treasurer",
     "info": "Susmita ensures our accounts are well-organized and up to date.",
     "socialLinks": {
@@ -80,7 +80,7 @@
   {
     "id": 7,
     "name": "Madhav Poudel",
-    "image": "src/assets/member/madhavpoudel.jpg",
+    "image": "/Nepathya-Iot-Robotics/member/madhavpoudel.jpg",
     "designation": "Graphic Designer",
     "info": "Madhav is a creative graphic designer, always coming up with fresh ideas.",
     "socialLinks": {
@@ -91,83 +91,81 @@
     }
   },
   {
-  "id": 8,
-  "name": "Anusha Gyawali",
-  "image": "src/assets/member/anushagyawali.jpg",
-  "designation": "Executive Member",
-  "info": "Anusha is a dedicated executive member, always contributing to the team’s success.",
-  "socialLinks": {
-    "facebook": "https://facebook.com/anushagyawali",
-    "instagram": "https://instagram.com/anushagyawali",
-    "github": "https://github.com/anushagyawali",
-    "twitter": "https://twitter.com/anushagyawali"
+    "id": 8,
+    "name": "Anusha Gyawali",
+    "image": "/Nepathya-Iot-Robotics/member/anushagyawali.jpg",
+    "designation": "Executive Member",
+    "info": "Anusha is a dedicated executive member, always contributing to the team’s success.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/anushagyawali",
+      "instagram": "https://instagram.com/anushagyawali",
+      "github": "https://github.com/anushagyawali",
+      "twitter": "https://twitter.com/anushagyawali"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Anish Poudel",
+    "image": "/Nepathya-Iot-Robotics/member/anishpoudel.jpeg",
+    "designation": "Executive Member",
+    "info": "Anish is a proactive executive member, always bringing fresh perspectives.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/anishpoudel",
+      "instagram": "https://instagram.com/anishpoudel",
+      "github": "https://github.com/anishpoudel",
+      "twitter": "https://twitter.com/anishpoudel"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Nirmal Pandey",
+    "image": "/Nepathya-Iot-Robotics/member/nirmalpandey.jpeg",
+    "designation": "Executive Member",
+    "info": "Nirmal is a reliable executive member, always striving to help the team grow.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/nirmalpandey",
+      "instagram": "https://instagram.com/nirmalpandey",
+      "github": "https://github.com/nirmalpandey",
+      "twitter": "https://twitter.com/nirmalpandey"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Prabesh Aryal",
+    "image": "/Nepathya-Iot-Robotics/member/prabesharyal.jpg",
+    "designation": "Executive Member",
+    "info": "Prabesh is a committed executive member, always focused on driving positive change.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/prabesharyal",
+      "instagram": "https://instagram.com/prabesharyal",
+      "github": "https://github.com/prabesharyal",
+      "twitter": "https://twitter.com/prabesharyal"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Dinesh Poudel",
+    "image": "/Nepathya-Iot-Robotics/member/dineshpoudel.jpg",
+    "designation": "Executive Member",
+    "info": "Dinesh is a passionate executive member, always working hard to bring innovative solutions.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/dineshpoudel",
+      "instagram": "https://instagram.com/dineshpoudel",
+      "github": "https://github.com/dineshpoudel",
+      "twitter": "https://twitter.com/dineshpoudel"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Ashik Rana Magar",
+    "image": "/Nepathya-Iot-Robotics/member/ashikrana.jpg",
+    "designation": "Executive Member",
+    "info": "Ashik is an enthusiastic executive member, always keen to contribute to the team’s success.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/ashikranamagar",
+      "instagram": "https://instagram.com/ashikranamagar",
+      "github": "https://github.com/ashikranamagar",
+      "twitter": "https://twitter.com/ashikranamagar"
+    }
   }
-},
-{
-  "id": 9,
-  "name": "Anish Poudel",
-  "image": "src/assets/member/anishpoudel.jpeg",
-  "designation": "Executive Member",
-  "info": "Anish is a proactive executive member, always bringing fresh perspectives.",
-  "socialLinks": {
-    "facebook": "https://facebook.com/anishpoudel",
-    "instagram": "https://instagram.com/anishpoudel",
-    "github": "https://github.com/anishpoudel",
-    "twitter": "https://twitter.com/anishpoudel"
-  }
-},
-{
-  "id": 10,
-  "name": "Nirmal Pandey",
-  "image": "src/assets/member/nirmalpandey.jpeg",
-  "designation": "Executive Member",
-  "info": "Nirmal is a reliable executive member, always striving to help the team grow.",
-  "socialLinks": {
-    "facebook": "https://facebook.com/nirmalpandey",
-    "instagram": "https://instagram.com/nirmalpandey",
-    "github": "https://github.com/nirmalpandey",
-    "twitter": "https://twitter.com/nirmalpandey"
-  }
-},
-{
-  "id": 11,
-  "name": "Prabesh Aryal",
-  "image": "src/assets/member/prabesharyal.jpg",
-  "designation": "Executive Member",
-  "info": "Prabesh is a committed executive member, always focused on driving positive change.",
-  "socialLinks": {
-    "facebook": "https://facebook.com/prabesharyal",
-    "instagram": "https://instagram.com/prabesharyal",
-    "github": "https://github.com/prabesharyal",
-    "twitter": "https://twitter.com/prabesharyal"
-  }
-},
-{
-  "id": 12,
-  "name": "Dinesh Poudel",
-  "image": "src/assets/member/dineshpoudel.jpg",
-  "designation": "Executive Member",
-  "info": "Dinesh is a passionate executive member, always working hard to bring innovative solutions.",
-  "socialLinks": {
-    "facebook": "https://facebook.com/dineshpoudel",
-    "instagram": "https://instagram.com/dineshpoudel",
-    "github": "https://github.com/dineshpoudel",
-    "twitter": "https://twitter.com/dineshpoudel"
-  }
-},
-{
-  "id": 13,
-  "name": "Ashik Rana Magar",
-  "image": "src/assets/member/ashikrana.jpg",
-  "designation": "Executive Member",
-  "info": "Ashik is an enthusiastic executive member, always keen to contribute to the team’s success.",
-  "socialLinks": {
-    "facebook": "https://facebook.com/ashikranamagar",
-    "instagram": "https://instagram.com/ashikranamagar",
-    "github": "https://github.com/ashikranamagar",
-    "twitter": "https://twitter.com/ashikranamagar"
-  }
-}
-
-
 ]

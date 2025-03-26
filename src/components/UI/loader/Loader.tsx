@@ -1,4 +1,4 @@
-import LoaderImg from "../../../assets/union_png.png";
+import LoaderImg from "@/assets/union_png.png";
 
 function Loader() {
   return (

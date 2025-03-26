@@ -1,3 +1,4 @@
+import { collegePng, unionPng } from "@/assets/images";
 import Button from "../ui/button/Button";
 
 function Body() {
@@ -22,11 +23,7 @@ function Body() {
         </div>
         <div className="homebottom flex justify-around items-center w-full bottom-0 absolute bg-bg-nav ">
           <div className="">
-            <img
-              src="src\assets\union_png.png"
-              alt="Union_Logo"
-              className=" lg:h-16 w-16"
-            />
+            <img src={unionPng} alt="Union_Logo" className=" lg:h-16 w-16" />
           </div>
           <div className="">
             <h1 className=" h1-animate text-center uppercase text-white text-md sm:text-xl lg:text-3xl shadow">
@@ -34,11 +31,7 @@ function Body() {
             </h1>
           </div>
           <div className="bg-white rounded-[50%]">
-            <img
-              src="src\assets\nepathya-college.png"
-              alt="Union_Logo"
-              className="lg:h-16 w-16 "
-            />
+            <img src={collegePng} alt="Union_Logo" className="lg:h-16 w-16 " />
           </div>
         </div>
       </div>

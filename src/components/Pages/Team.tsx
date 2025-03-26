@@ -43,7 +43,7 @@ function Team() {
       <Carousel
         swipeable={true}
         draggable={true}
-        showDots={false}
+        showDots={true}
         arrows={false}
         responsive={responsive}
         ssr={true}

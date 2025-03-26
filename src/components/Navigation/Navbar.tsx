@@ -2,6 +2,17 @@ import { useEffect, useState } from "react";
 import Button from "../ui/button/Button";
 import { NavLink, Link } from "react-router-dom";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import {
+  locationIcon,
+  callIcon,
+  mailIcon,
+  facebookIcon,
+  instagramIcon,
+  twitterIcon,
+  youtubeIcon,
+  unionPng,
+  schoolIcon,
+} from "@/assets/images";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -25,7 +36,7 @@ function Navbar() {
       setActive(!active);
     }
   };
-  // setActive(!active);
+
   const iconstyle: string =
     "flex items-center p-1 text-black bg-white rounded-xl cursor-pointer hover:bg-text-primary hover:text-white";
 
@@ -62,7 +73,7 @@ function Navbar() {
         <div className="flex justify-around w-4/5 lg:w-3/4 text-xs md:text-xs lg:text-sm xl:text-lg">
           <div className="flex items-center md:gap-1">
             <img
-              src="src\assets\location_icon.svg"
+              src={locationIcon}
               className="md:h-4 lg:h-5"
               alt="Location_icon"
             />
@@ -70,36 +81,28 @@ function Navbar() {
           </div>
           <span> | </span>
           <div className="flex items-center gap-1">
-            <img
-              src="src/assets/call_icon.svg"
-              className="md:h-4 lg:h-5"
-              alt="tel_icon"
-            />
+            <img src={callIcon} className="md:h-4 lg:h-5" alt="tel_icon" />
             <span>071562537, 9857043464</span>
           </div>
           <span> | </span>
           <div className="flex items-center gap-2">
-            <img
-              src="src/assets/mail_icon.svg"
-              className="md:h-4 lg:h-5"
-              alt="mail icon"
-            />
+            <img src={mailIcon} className="md:h-4 lg:h-5" alt="mail icon" />
             <span>info.iotrobotic@nepathyacollege.edu.np</span>
           </div>
         </div>
 
         <div className="flex gap-3 lg:gap-5 absolute right-5 lg:right-10">
           <div className={`facebook ${iconstyle}`}>
-            <img src="src\assets\facebook.svg" alt="facebook" />
+            <img src={facebookIcon} alt="facebook" />
           </div>
           <div className={`insta ${iconstyle}`}>
-            <img src="src\assets\instagram.svg" alt="instagram" />
+            <img src={instagramIcon} alt="instagram" />
           </div>
           <div className={`twitter ${iconstyle}`}>
-            <img src="src\assets\x-twitter.svg" alt="instagram" />
+            <img src={twitterIcon} alt="twitter" />
           </div>
           <div className={`youtube ${iconstyle}`}>
-            <img src="src\assets\youtube.svg" alt="instagram" />
+            <img src={youtubeIcon} alt="youtube" />
           </div>
         </div>
       </header>
@@ -107,7 +110,7 @@ function Navbar() {
       <header className="relative flex justify-between px-6 md:px-2 md:justify-around items-center w-auto h-[12vh] border-b-2 z-50 border-border-button bg-white">
         <Link to={"/"} className="h-4/5 w-auto">
           <img
-            src="src\assets\union_png.png"
+            src={unionPng}
             alt="nepathya_college-png"
             className="h-full w-auto"
           />
@@ -139,7 +142,7 @@ function Navbar() {
           <Button
             text="Join the Club"
             alternate="Graduation_cap"
-            icon="src\assets\school_icon.svg"
+            icon={schoolIcon}
             style="block md:hidden p-3 sm:w-1/2 md:p-2 lg:p-3 rounded-3xl"
             path="/join"
           />
@@ -158,7 +161,7 @@ function Navbar() {
         <Button
           text="Join the Club"
           alternate="Graduation_cap"
-          icon="src\assets\school_icon.svg"
+          icon={schoolIcon}
           style="hidden md:block px-1 py-2 md:p-2 lg:p-3 rounded-3xl"
           path="/join"
         />
