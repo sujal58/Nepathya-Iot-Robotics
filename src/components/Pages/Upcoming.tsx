@@ -3,10 +3,13 @@ import EventStatus from "../../utils/EventStatus";
 
 function Upcoming() {
   return (
-    <div className="min-h-[82vh] z-30 bg-white">
+    <div
+      className="min-h-[82vh] relative z-30 md:mt-0 pb-10 md:pb-0 bg-white border-b border-text-primary"
+      id="upcoming-event"
+    >
       <div className=" flex flex-col text-text-primary">
-        <div className="heading h-1/4 bg-text-secondary text-white">
-          <h2 className="text-white text-center text-3xl leading-10">
+        <div className="heading py-1 bg-text-secondary text-white">
+          <h2 className="text-white text-center  font-playfair font-semibold xs:text-xl sm:text-2xl md:text-3xl leading-10">
             UPCOMING EVENTS
           </h2>
         </div>

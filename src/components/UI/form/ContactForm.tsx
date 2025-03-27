@@ -61,7 +61,7 @@ function ContactForm() {
   return (
     <div className="flex relative justify-center items-center w-full h-full bg-gradient-to-r ">
       <div className="bg-white shadow-md rounded-xl w-full max-w-md py-10 px-8 z-30">
-        <h1 className="text-2xl font-semibold text-center mb-4 text-text-secondary">
+        <h1 className="text-2xl font-semibold font-playfair text-center mb-4 text-text-secondary">
           Contact Form
         </h1>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -131,7 +131,7 @@ function ContactForm() {
             <div className="text-center mt-6">
               <button
                 type="submit"
-                className="w-full py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full py-2 px-4 bg-bg-button text-white rounded-md hover:bg-text-primary focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Submit
               </button>

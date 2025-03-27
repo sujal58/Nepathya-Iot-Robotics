@@ -12,20 +12,23 @@ import {
 
 function GetInTouch() {
   const iconstyle: string =
-    "flex items-center p-1 text-black bg-white  rounded-xl cursor-pointer hover:bg-teal-500 hover:scale-150";
+    "flex items-center p-1 text-black bg-white  rounded-xl cursor-pointer hover:bg-blue-500 hover:scale-150";
   return (
-    <div className="min-h-[82vh] space-y-10 mb-5 relative justify-center items-center max-w-screen ">
+    <div
+      className="min-h-[82vh] space-y-10 mb-5 relative justify-center items-center max-w-screen "
+      id="get-in-touch"
+    >
       {/* bg-gradient-to-r from-teal-500 to-text-secondary */}
       <ParticleBackground color="black" />
-      <div className="z-30 text-white text-center">
+      <div className="z-30 relative flex gap-5 justify-center items-center flex-col text-white text-center">
         <h2 className="font-playfair font-semibold text-text-secondary text-center text-2xl md:text-3xl leading-10">
-          Get in Touch with us !!
+          We'd Love to Hear From You!
         </h2>
-        <p className="text-md md:text-xl text-black font-montserrat">
-          <i>
-            We'd love to hear from you. Feel free to contact us for any
-            inquiries!
-          </i>
+        <p className="text-sm md:text-lg min-h-max font-light text-text-primary font-montserrat w-3/4 md:w-2/3">
+          Got an innovative IoT idea, a suggestion, or a project you'd like to
+          share? Connect with us and become part of the vibrant IoT Club
+          community! Feel free to reach out and connect with the IoT Club
+          community!
         </p>
       </div>
       <div className="flex flex-col gap-5  md:gap-0 md:flex-row justify-around w-full items-center h-full">
@@ -33,7 +36,7 @@ function GetInTouch() {
           <div className="contactdiv flex flex-col gap-12 h-full w-full md:w-[90%] lg:w-3/4 rounded-md p-3 lg:px-8 py-10 z-30 bg-text-secondary ">
             {/* contact information */}
             <div className="flex flex-col gap-10 text-sm sm:text-base md:text-lg">
-              <h3 className=" text-xl md:text-2xl font-montserrat font-semibold">
+              <h3 className=" text-xl md:text-2xl font-playfair font-semibold">
                 Contact Information
               </h3>
               <div className="flex gap-1">
@@ -73,7 +76,7 @@ function GetInTouch() {
 
             {/* Social Media Links */}
             <div className="flex flex-col space-y-5">
-              <h3 className="text-xl md:text-2xl font-semibold text-white">
+              <h3 className="text-xl md:text-2xl font-semibold font-playfair text-white">
                 Social Media Links
               </h3>
 

@@ -31,18 +31,19 @@ function TeamCard({
         <div className="w-full flex justify-center items-center">
           <img
             src={image}
-            alt=""
+            alt={name}
+            loading="lazy"
             className="rounded-[50%] h-28 w-28 object-cover object-center"
           />
         </div>
-        <div className="text-center text-pretty">
+        <div className="text-center text-pretty font-montserrat">
           <div>{name}</div>
           <p
             className={`${
               designation == "President" && "text-bg-button text-xl"
             } ${
               designation == "Vice President" && "text-bg-nav text-lg"
-            } font-semibold`}
+            } font-semibold font-poppins`}
           >
             {designation}
           </p>

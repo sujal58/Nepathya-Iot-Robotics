@@ -25,14 +25,14 @@ const ParticleBackground = (props: { color: string }) => {
 
   return (
     init && (
-      <div className="particle-container z-10 bg-gradient-to-r from-teal-500 to-text-secondary">
+      <div className="particle-container z-10 ">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={{
             background: {
               color: {
-                value: "",
+                value: "#ffffff",
               },
             },
             fpsLimit: 120,

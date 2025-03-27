@@ -5,13 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        "text-primary": "#00539F",
+        // #00539F
+        "text-primary": "#00397a",
         "text-secondary": "#003B71",
         "text-tertiary": "#DC2626",
         "bg-button": "rgb(159, 22, 46)",
-        "bg-nav": "#283172",
+        // #283172
+        "bg-nav": "#00397a",
         "bg-secondary": "#D7D6D6",
         "border-button": "rgb(143, 184, 230)",
+        "bg-body": "#ffffff",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

@@ -26,8 +26,11 @@ function Work() {
     },
   };
   return (
-    <div className="flex flex-col mt-5 mb-5 gap-5 mx-10 min-h-[82vh] bg-white">
-      <div className="title text-text-primary font-bold text-4xl text-center">
+    <div
+      className="flex flex-col relative z-30 mt-5 space-y-3 pb-3 min-h-[82vh] bg-white border-b border-text-primary"
+      id="works"
+    >
+      <div className="title text-text-primary font-playfair font-bold xs:text-xl sm:text-2xl md:text-4xl text-center relative z-20">
         OUR WORK
       </div>
 
@@ -48,7 +51,7 @@ function Work() {
         removeArrowOnDeviceType={[]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-20-px"
-        className="flex p-5 pb-10 md:p-10 h-full relative"
+        className="flex p-5 mx-10 pb-10 md:p-10 h-full relative"
       >
         {/* p-10  */}
         {work.map((value, index) => {
@@ -60,7 +63,7 @@ function Work() {
         })}
       </Carousel>
 
-      <div className="explorebtn flex justify-end">
+      <div className="explorebtn flex justify-end mr-10">
         <button className="bg-bg-nav text-white p-2 rounded-xl">
           <div>Explore Our Works➡️</div>
         </button>
